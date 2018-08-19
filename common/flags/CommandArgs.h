@@ -24,7 +24,10 @@ namespace lmars{
 
     public:
     CommandArgs();
-    virtual ~CommandArgs();
+
+        CommandArgs();
+
+        virtual ~CommandArgs();
     bool parseArgs(int argc,char** argv,bool exitOnError=true);
     void param(const std::string&name, bool&p,bool defValue, const std::string& desc);
     void param(const std::string&name,int&p,int defValue, const std::string&desc);

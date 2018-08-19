@@ -52,5 +52,17 @@ namespace lmars{
         }
         return false;
     }
+    template <class T1,class T2, class Pred=less<T1>>
+            struct CmpPairFirst{
+        bool operator()(const pair<T1,T2>& left, const pair<T1,T2> &right){
+            return Pred()(left.first,right.first);
+        }
+    };
+    enum CommandArgumentType{
+        CAT_DOUBLE,CAT_FLOAT, CAT_INT, CAT_STRING, CAT_BOOL, CAT_VECTOR_INT, CAT_VECTOR_DOUBLE
+    };
+
+    CommandArgs::CommandArgs() {}
+    CommandArgs::~CommandArgs() {}
 
 }
