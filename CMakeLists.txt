@@ -16,4 +16,4 @@ set(CMAKE_CXX_STANDARD 11)
         # ${G2O_INCLUDE_DIRS}
 # )
 
-add_executable(backendOpt main.cpp common/flags/CommandArgs.cpp common/flags/CommandArgs.h)
+add_executable(backendOpt main.cpp common/flags/CommandArgs.cpp common/flags/CommandArgs.h common/BundleParams.h common/projection.h common/BALProblem.cpp common/BALProblem.h)
