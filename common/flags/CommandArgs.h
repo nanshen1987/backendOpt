@@ -42,7 +42,7 @@ namespace lmars{
     const std::string& getBanner() const { return _banner};
     void setBanner(const std::string& banner);
 
-    void printHelper(std::ostream&os);
+    void printHelp(std::ostream&os);
 
     bool parsedParam(const std::string& paramFlag) const ;
 
